@@ -48,7 +48,7 @@ ul.menu  > li + li:before {
 }
 
 #mainimage{
-	background: url('../img/main.jpg') no-repeat center top;
+	background: url('../img/main1.jpg') no-repeat center top;
 	background-size: contain;
 	height: 500px;
 	width: 100%;
@@ -99,4 +99,27 @@ img.grayscale {
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	filter: grayscale(100%);
+}
+
+#quote{
+	margin: 0 auto;
+	text-align: center;
+}
+
+blockquote {
+  
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }
