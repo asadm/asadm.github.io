@@ -1,0 +1,102 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+	font-weight: 300;
+	margin: 0px;
+}
+
+.text-center{
+	text-align: center;
+}
+.footer{
+	border-top: 1px solid #ccc;
+	text-align: center;
+	font-size: 10px;
+	padding: 10px;
+	color: #999;
+	margin-top: 30px;
+}
+.footer a{
+	color: #999;
+}
+ul.menu{
+	list-style: none;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+}
+ul.menu li{
+	display: inline-block;
+	
+}
+ul.menu li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+ul.menu li a:hover{
+	text-decoration: underline;
+}
+
+ul.menu  > li + li:before {
+    color: #000;
+    content: "// ";
+    padding: 0 8px;
+}
+
+#mainimage{
+	background: url('../img/main.jpg') no-repeat center top;
+	background-size: contain;
+	height: 500px;
+	width: 100%;
+}
+
+ul.projectlist{
+	list-style-type: square;
+	
+	
+	margin-top: 50px;
+}
+ul.projectlist a{
+	color: #000;
+}
+
+ul.projectlist h3,p{
+	margin: 0px;
+	
+}
+ul.projectlist p{
+	font-weight: 300;
+}
+
+ul.projectlist h3{
+	font-weight: 400;
+}
+ul.projectlist li{
+	margin-bottom: 30px;
+}
+ul.projectlist li a:hover{
+	color: #777;
+}
+
+.content{
+	margin: 100px 0px;
+}
+
+#photos{
+	text-align: center;
+}
+#photos img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+img.grayscale { 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
