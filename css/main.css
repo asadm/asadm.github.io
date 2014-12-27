@@ -1,5 +1,11 @@
+html { font-size: 62.5%; } 
+body { font-size: 1.5rem; } /* =14px */
+h1   { font-size: 2.4rem; } /* =24px */
+
+
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-text-size-adjust: none;
 }
 
 h1{
@@ -13,7 +19,7 @@ h1{
 .footer{
 	border-top: 1px solid #ccc;
 	text-align: center;
-	font-size: 0.5em;
+	font-size: 1.0rem;
 	padding: 10px;
 	color: #999;
 	margin-top: 30px;
@@ -34,7 +40,7 @@ ul.menu li{
 ul.menu li a{
 	color: #000;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.3rem;
 }
 
 ul.menu li a:hover{
@@ -57,6 +63,7 @@ ul.menu  > li + li:before {
 @media (max-width: 768px){
 	#mainimage{
 		height: 300px;
+		background-position: center;
 	}
 }
 
