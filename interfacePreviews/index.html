@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div id="tilecontainer" data-loading="container" class="col-xs-12">
+        <div class="tile" data-loading="placeholder">
+            <div class="offer">
+                <div class="bookmark loadingShimmer"></div>
+                <div class="head">
+                    <div id="title" class="loadingShimmer">.</div>
+                    <div id="date" class="loadingShimmer">.</div>
+                </div>
+                <div id="foot">
+                    <span class="profile loadingShimmer"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="notile" data-loading="empty" class="text-center">
+            <h4>You have no posts currently.</h4>
+        </div>
+    </div>
+
+    <div id="controls" class="col-xs-12">
+		<a id="btn_addpost" class="btn btn-primary">Simulate Append Element</a>
+		<a id="btn_loaded" class="btn btn-primary">Simulate Loading Finished</a>
+		<a id="btn_clear" class="btn btn-primary">Clear Elements</a>
+	</div>
+
+
+
+
+    <div id="template-realtile" class="tile realtile hidden">
+        <div class="offer">
+            <div class="bookmark loadingShimmer"></div>
+            <div class="head">
+                <div id="title" class="">Today I Learned...</div>
+                <div id="date" class="">1st January 2015</div>
+            </div>
+            <div id="foot">
+                <img class="profile" src="//graph.facebook.com/zuck/picture" />
+                <span class="profiletext">zuck</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+<!--A COPY OF README.MD-->
+    <div class="col-xs-12">
+    	<h1 id="interfacepreviews-js">InterfacePreviews.js</h1>
+<p>A tiny library to help with &quot;Interface Previews&quot; while data is being loaded, similar to Facebook.</p>
+<h2 id="interface-previews">Interface Previews</h2>
+<p>While user is waiting for data to be loaded, he is shown a preview of the interface with placeholders instead of real data. They improve user experience because users can use the time normally spent looking at a white screen or an AJAX spinner getting familiar with the layout of your app.</p>
+<p>Read More: <a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></p>
+<p>Source Code: <a href="https://github.com/asadm/interfacepreviews.js">Github</a></p>
+<h2 id="how-to-use">How to Use</h2>
+<ul>
+<li>First you need to include <b>JQuery</b> and <b>interfacePreviews.js</b> into your page.</li>
+<li>You need a container element that holds your items/lists/tiles etc. This container needs to have <b>data-loading=&quot;container&quot;</b> attribute. Something like:</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"container"</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"container"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Now you need to add a placeholder element inside this container, which will be visible by default on page load and will automatically be hidden if anything else is added to this container. The placeholder needs to have <b>data-loading=&quot;placeholder&quot;</b> attribute. This is make your code something like this:</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"container"</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"placeholder"</span>&gt;</span>
+        Wait for it...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li>You also need to add another element which will be shown when your app discovers that there are no elements to be added to this container. Example: You fetch new posts but find out there are no new posts, so you want to show a message now. This element needs to have <b>data-loading=&quot;empty&quot;</b> attribute.</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"container"</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"placeholder"</span>&gt;</span>
+        Wait for it...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">data-loading</span>=<span class="hljs-value">"empty"</span>&gt;</span>
+        No new posts to show.
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li>When you have finished fetching data you need to call this function on your container:</li>
+</ul>
+<pre><code class="lang-html">$(&#39;#container&#39;).hasLoaded();
+</code></pre>
+<p>This will have no effect if you appended elements to the container, but if there are no elements to show, this function will make &quot;No new posts...&quot; visible.</p>
+<p>MIT Licensed.</p>
+    </div>
+
+<!--README.MD ENDS-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/interfacePreviews.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

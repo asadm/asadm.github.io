@@ -1,0 +1,156 @@
+
+/* FACEBOOK STYLE INTERFACE PREVIEW */
+.loadingShimmer{
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(linear, left center, right center, from(#f6f7f8), color-stop(.2, #edeef1), color-stop(.4, #f6f7f8), to(#f6f7f8));
+  background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: transparent!important;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+#tilecontainer{
+  padding: 20px;
+}
+
+.tile{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.tile .offer{
+  height: 180px;
+  width: 340px;
+  position: relative;
+  border: 1px solid #f9f9f9;
+  border-radius: 0px;
+  overflow: visible;
+}
+
+.tile .offer .head{
+  margin-top: 24px;
+  padding-left: 20px;
+  color: #555;
+}
+.tile .offer #foot{
+  position: absolute;
+  bottom: 0;
+  padding: 0px 20px;
+  width: 100%;
+  background-color: #fbfbfb;
+  border-top: 1px solid #f6f6f6;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  border-top-width: 2px;
+}
+.tile .offer #foot .profile{
+  font-weight: 400;
+  font-size: 40px;
+  margin-right: 5px;
+  float: left;
+  height: 40px;
+  margin: 10px 0px;
+  width: 40px;
+}
+
+.tile .offer .head #title{
+  width: 85%;
+  margin-top: 15px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 21px;
+  margin-left: 0px;
+  padding: 0px;
+
+}
+
+.tile .offer .head #date{
+  width: 85%;
+  position: absolute;
+  font-weight: 100;
+  font-size: 13px;
+  border-top: 3px solid #fff;
+  font-weight: 100;
+
+  margin-top: 45px;
+}
+
+.tile .offer .bookmark{
+  width: 4px;
+  position: absolute;
+  height: 180px;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+#notile{
+  color: #999;
+  margin: 80px;
+}
+
+.realtile{
+  cursor: pointer;
+
+}
+.realtile .offer{
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.03);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.realtile:hover .offer{
+  
+  box-shadow: 0 7px 20px rgba(0,0,0,0.1)!important;
+}
+
+.realtile #foot img{
+  width: 40px;
+
+}
+
+.realtile #foot .profiletext{
+  float: left;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+#controls{
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
