@@ -31,7 +31,7 @@ ul.menu{
 }
 ul.menu li{
 	display: inline-block;
-	
+
 }
 ul.menu li a{
 	color: #000;
@@ -65,8 +65,9 @@ ul.menu  > li + li:before {
 
 ul.projectlist{
 	list-style-type: square;
-	
-	
+	max-width: 600px;
+
+
 	margin-top: 50px;
 }
 ul.projectlist a{
@@ -75,7 +76,7 @@ ul.projectlist a{
 
 ul.projectlist h3,p{
 	margin: 0px;
-	
+
 }
 ul.projectlist p{
 	font-weight: 300;
@@ -98,13 +99,25 @@ ul.projectlist li a:hover{
 #photos{
 	text-align: center;
 }
+
+#photos > div{
+	max-width: 600px;
+	display: block;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 1.4;
+	color: rgba(0,0,0,.6);
+	letter-spacing: 0;
+	margin-bottom: 50px;
+	text-align: center;
+}
 #photos img{
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	max-width: 100%;
+	max-width: 600px;
 }
-img.grayscale { 
+img.grayscale {
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -116,7 +129,7 @@ img.grayscale {
 }
 
 blockquote {
-  
+
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
