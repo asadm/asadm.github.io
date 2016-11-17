@@ -1,0 +1,39 @@
+<h1>InterfacePreviews.js</h1><p>A tiny library to help with &quot;Interface Previews&quot; while data is being loaded, similar to Facebook.</p>
+<h2>Interface Previews</h2><p>While user is waiting for data to be loaded, he is shown a preview of the interface with placeholders instead of real data. They improve user experience because users can use the time normally spent looking at a white screen or an AJAX spinner getting familiar with the layout of your app.</p>
+<p>Read More: <a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></p>
+<p>##How to Use</p>
+<ul>
+<li>First you need to include <b>JQuery</b> and <b>interfacePreviews.js</b> into your page.</li>
+<li>You need a container element that holds your items/lists/tiles etc. This container needs to have <code>data-loading=&quot;container&quot;</code> attribute. Something like:</li>
+</ul>
+<pre><code class="language-html">&lt;div id=&quot;container&quot; data-loading=&quot;container&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>Now you need to add a placeholder element inside this container, which will be visible by default on page load and will automatically be hidden if anything else is added to this container. The placeholder needs to have <code>data-loading=&quot;placeholder&quot;</code> attribute. This is make your code something like this:</li>
+</ul>
+<pre><code class="language-html">&lt;div id=&quot;container&quot; data-loading=&quot;container&quot;&gt;
+    &lt;div data-loading=&quot;placeholder&quot;&gt;
+        Wait for it...
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>You also need to add another element which will be shown when your app discovers that there are no elements to be added to this container. Example: You fetch new posts but find out there are no new posts, so you want to show a message now. This element needs to have <code>data-loading=&quot;empty&quot;</code> attribute.</li>
+</ul>
+<pre><code class="language-html">&lt;div id=&quot;container&quot; data-loading=&quot;container&quot;&gt;
+    &lt;div data-loading=&quot;placeholder&quot;&gt;
+        Wait for it...
+    &lt;/div&gt;
+    &lt;div data-loading=&quot;empty&quot;&gt;
+        No new posts to show.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li>When you have finished fetching data you need to call this function on your container:</li>
+</ul>
+<pre><code class="language-html">$(&#39;#container&#39;).hasLoaded();
+</code></pre>
+<p>This will have no effect if you appended elements to the container, but if there are no elements to show, this function will make &quot;No new posts...&quot; visible.</p>
+<p>MIT Licensed.</p>
