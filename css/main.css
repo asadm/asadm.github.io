@@ -2,11 +2,58 @@
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: -0.004em;
+	
+	font-style: normal;
+	color: rgba(0, 0, 0, 0.84);
+	font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', "Helvetica Neue", sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+li,p{
+	font-size: 18px;
+	line-height: 1.58;
 }
 
 h1{
 	font-weight: 300;
 	margin: 0px;
+}
+
+h2{
+	font-size: 40px;
+	line-height: 1.05;
+	font-weight: 500;
+	letter-spacing: 0.008em;
+	margin: 20px 0px;
+    /* font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+}
+
+h3{
+	font-size: 24px;
+	line-height: 1.20849;
+	font-weight: 500;
+	letter-spacing: 0.015em;
+}
+
+code{
+	background: #333;
+	color: #eee;
+	padding: 4px 9px;
+	border-radius: 3px;
+}
+
+ul h4{
+	margin: 0px;
+}
+
+ul p{
+	margin: 0px;
+}
+
+p{
+	margin-bottom: 20px;
 }
 
 .text-center{
@@ -15,10 +62,12 @@ h1{
 .footer{
 	border-top: 1px solid #ccc;
 	text-align: center;
-	font-size: 10px;
 	padding: 10px;
 	color: #999;
 	margin-top: 30px;
+}
+.footer p{
+	font-size: 10px;
 }
 .footer a{
 	color: #999;
@@ -27,7 +76,7 @@ ul.menu{
 	list-style: none;
 	text-align: center;
 	padding: 0px;
-	margin-top: 0px;
+	margin-top: 10px;
 }
 ul.menu li{
 	display: inline-block;
@@ -75,7 +124,7 @@ ul.projectlist a{
 }
 
 ul.projectlist h3,p{
-	margin: 0px;
+	/* margin: 0px; */
 
 }
 ul.projectlist p{
@@ -83,7 +132,8 @@ ul.projectlist p{
 }
 
 ul.projectlist h3{
-	font-weight: 400;
+	font-weight: bold;
+	margin-bottom: 7px;
 }
 ul.projectlist li{
 	margin-bottom: 30px;
