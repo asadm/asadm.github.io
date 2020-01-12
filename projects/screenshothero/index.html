@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Screenshot Hero - Asad Memon</title>
+	<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='/css/main.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-58030862-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1855799973");
+	</script>
+	<meta property="og:title" content="Asad Memon Homepage" />
+	<meta property="og:type" content="article" />
+  <meta property="og:url" content="https://asadmemon.com/" />
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png" />
+	<meta property="og:image" content="https://asadmemon.com/img/main1.jpg" />
+  
+  <meta property="og:description" content="Screenshot Hero scans through your screenshots (and other saved photos) and makes then instantly searchable by text in them." />
+  
+</head>
+
+<body>
+	<h1 class="text-center">Asad Memon</h1>
+  <ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/bio">Bio</a></li>
+    <li><a href="/photospage">Photos</a></li>
+    <li><a href="/software">Software</a></li>
+    <li><a href="/hardware">Hardware</a></li>
+    <li><a href="/talks">Talks</a></li>
+
+    <li><a target="_blank" href="https://blog.asadmemon.com">Blog</a></li>
+    <li><a target="_blank" href="https://github.com/asadm">Github</a></li>
+
+    </ul>
+
+    <hr>
+
+<p><img src="icon.png" width="100" style="border-radius: 20px;" /></p>
+
+<h2>Screenshot Hero</h2>
+
+<p>Screenshot Hero scans through your screenshots (and other saved photos) and makes then instantly searchable by text in them.</p>
+
+<video style="max-height:100vh; border: 1px solid #000;" controls autoplay>
+  <source src="preview.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h3>Highlights</h3>
+
+<ul>
+<li>Images are all processed <strong>on-device</strong> and nothing is sent to any server.</li>
+<li>Tested to work with <strong>thousands of images</strong>.</li>
+<li>Best and most <strong>performant OCR technology</strong>.</li>
+</ul>
+
+<p><a href="https://apps.apple.com/us/app/screenshot-hero/id1493170794?ls=1"><img style="margin: 10px 0px;" width="120" src="badge.png"></a></p>
+
+<hr>
+
+<h2>Technical Details</h2>
+
+<p>I wanted to build a simple utility app that would run OCR through my photos (all 5000+ of them) and make them searchable. I had following constraints for it:</p>
+
+<ul>
+<li>It has to be <strong>fast</strong>. The UI needs to be fluid even for thousands of images.</li>
+<li>All processing should happen <strong>on-device</strong>, should not be uploading photos to a cloud service.</li>
+<li>I need to <strong>make it quick</strong> (I only had a week allocated for this project).</li>
+</ul>
+
+<p>I am primarily a web developer and am not a skilled mobile developer. So I attempted this project with three different frameworks and here are my notes:</p>
+
+<h3>SwiftUI</h3>
+
+<p>SwiftUI is appealing as it&#39;s a React-like framework. I wanted to learn SwiftUI but I struggled with the documentation and even writing a simple grid of photos was challenging. The community is tiny so there aren&#39;t that many samples online either. I really wanted to use this but it was taking a bit too much of my time. Sadly, I had to ditch SwiftUI.</p>
+
+<h3>Expo.io</h3>
+
+<p>Expo is a React Native framework which bypasses the whole Android SDK + XCode step of making the app. It&#39;s very easy to get started and the dev experience is great. Having written a React Native app before, I really wanted this to work. The only problem occured when I wanted to write the OCR part: <code>expo eject</code> workflow is kinda broken. In my case, the <code>CameraRoll</code> API broke due to some unlinked native module when I tried to run it via XCode after ejecting the app. I spent a few hours fixing the native modules but that didn&#39;t work. </p>
+
+<p>Without ejecting, I could have gone with <a href="https://github.com/naptha/tesseract.js#tesseractjs">Tessaract.js</a> but it&#39;s not fast enough to process thousands of images quickly.</p>
+
+<p>There also isn&#39;t a way to do background processing with Expo. I feel expo is great for simple CRUD apps for now and will fail you if your app needs a custom functionality.</p>
+
+<h3>React Native</h3>
+
+<p>In the end, I had to fallback to what I already knew. I copied views which I had created earlier for expo.io into a new ReactNative project. I then created a custom Swift native module which had all my business logic:
+- Methods to fetch all photos and process newer ones.
+- Queue to process only N photos concurrently.
+- Storage Model, went with <a href="https://github.com/Tencent/MMKV">MKKV</a> as it was quick to set up.
+- OCR, used Apple&#39;s [Vision API](https://developer.apple.com/documentation/vision which is surprisingly accurate and fastest on-device.
+- set up <a href="https://developer.apple.com/documentation/backgroundtasks">BackgroundTasks</a> to schedule photo processing for later, when the app is sent to background mid-processing (remember we may have 10,000+ photos in our queue).</p>
+
+<h2>Conclusion</h2>
+
+<p>I learned that React Native is fast enough if used only for views (and maybe lightweight logic) only. I used <code>FlatList</code> for the grid photo view (with some optimizations to lazy load photos) and it is very smooth even for thousands of photos. Real-time searching/filtering is also really smooth. React Native also has great community support.</p>
+
+<p>Try Screenshot Hero <a href="https://apps.apple.com/us/app/screenshot-hero/id1493170794?ls=1">here</a>.</p>
+
+
+<div class="footer">
+<!--
+	I should hide something in here...
+-->
+
+<p>AsadMemon.com. Partially inspired by <a target="_blank" href="http://qasaryounis.com">qasaryounis.com</a></p>
+</div>
+</body>
+</html>
