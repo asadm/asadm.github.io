@@ -2,6 +2,7 @@
 layout: default
 title: Screenshot Hero
 description: Screenshot Hero scans through your screenshots (and other saved photos) and makes then instantly searchable by text in them.
+image: https://asadmemon.com/projects/screenshothero/icon.png
 ---
 
 ---

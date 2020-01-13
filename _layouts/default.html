@@ -17,13 +17,23 @@
 	<script type="text/javascript">
     window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
       heap.load("1855799973");
-	</script>
-	<meta property="og:title" content="Asad Memon Homepage" />
+  </script>
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:title" content="Asad Memon Homepage" />
+  {% endif %}
+	
 	<meta property="og:type" content="article" />
   <meta property="og:url" content="https://asadmemon.com/" />
   <link rel="apple-touch-icon" href="/favicon.png">
   <link rel="shortcut icon" href="/favicon.png" />
-	<meta property="og:image" content="https://asadmemon.com/img/main1.jpg" />
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image }}" />
+  {% else %}
+  <meta property="og:image" content="https://asadmemon.com/img/main1.jpg" />
+  {% endif %}
+
   {% if page.description %}
   <meta property="og:description" content="{{ page.description }}" />
   {% else %}
