@@ -51,7 +51,7 @@ In the end, I had to fallback to what I already knew. I copied views which I had
 - Methods to fetch all photos and process newer ones.
 - Queue to process only N photos concurrently.
 - Storage Model, went with [MKKV](https://github.com/Tencent/MMKV) as it was quick to set up.
-- OCR, used Apple's [Vision API](https://developer.apple.com/documentation/vision which is surprisingly accurate and fastest on-device.
+- OCR, used Apple's [Vision API](https://developer.apple.com/documentation/vision) which is surprisingly accurate and fastest on-device.
 - set up [BackgroundTasks](https://developer.apple.com/documentation/backgroundtasks) to schedule photo processing for later, when the app is sent to background mid-processing (remember we may have 10,000+ photos in our queue).
 
 
