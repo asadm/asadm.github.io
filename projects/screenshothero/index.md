@@ -58,4 +58,6 @@ In the end, I had to fallback to what I already knew. I copied views which I had
 
 I learned that React Native is fast enough if used only for views (and maybe lightweight logic) only. I used `FlatList` for the grid photo view (with some optimizations to lazy load photos) and it is very smooth even for thousands of photos. Real-time searching/filtering is also really smooth. React Native also has great community support.
 
+This means writing more backend code per platform, which sucks but is straight-forward. It's still better than writing front-end for each platform and dealing with all the quirks of each of them.
+
 Try Screenshot Hero [here](https://apps.apple.com/us/app/screenshot-hero/id1493170794?ls=1).
