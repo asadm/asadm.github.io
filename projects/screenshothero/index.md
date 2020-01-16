@@ -63,4 +63,6 @@ This means writing more backend code per platform, which sucks but is straight-f
 
 Try Screenshot Hero [here](https://apps.apple.com/us/app/screenshot-hero/id1493170794?ls=1).
 
-### P.S. If you do coding interviews, check out my main work [CodeInterview.io](https://codeinterview.io) -- Pair Programming for Interviews
+---
+
+### If you do coding interviews, check out my main work [CodeInterview.io](https://codeinterview.io) – Conduct technical interviews in a real-time shared coding environment.
