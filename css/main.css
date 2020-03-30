@@ -248,7 +248,7 @@ ul.menu{
 .project-link img{
 	width: 18px;
 	margin-right: 6px;
-	filter: grayscale(1);
+	/* filter: grayscale(1); */
 }
 
 .project-link:hover img{
@@ -272,4 +272,35 @@ ul#homepage-projects > li ul{
 }
 ul#homepage-projects > li ul li{
 	margin-top: 10px;
+}
+
+.badge{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 3px;
+	filter: saturate(0.8);
+}
+
+.badge:hover{
+	filter: saturate(1);
+}
+
+.badge svg{
+	width: 16px;
+}
+
+.badge span{
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+.badge.hn{
+	color: rgb(240, 101, 47);
+	fill: rgb(240, 101, 47);
+}
+
+.badge.ph{
+	color: rgb(218, 85, 47);
+	fill: rgb(218, 85, 47);
 }
