@@ -195,3 +195,81 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.container{
+	max-width: 970px;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+}
+
+#logo{
+	/* display: inline-block; */
+	float: left;
+	font-size: 20px;
+	margin-top: 7px;
+	margin-right: 20px;
+}
+
+#logo a{
+	color: inherit;
+	text-decoration: none;
+}
+
+ul.menu{
+	text-align: right;
+}
+
+#hero{
+	margin-top: 15vh;
+}
+#hero h1{
+	font-size: 46px;
+}
+#hero h2{
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 1.2;
+}
+
+.project-link{
+	padding: 2px 4px;
+	border-bottom: 2px solid #ececec;
+	text-decoration: none;
+	color: inherit;
+	font-weight: 500;
+}
+
+.project-link:hover{
+	border-bottom-color: #000;
+}
+
+.project-link img{
+	width: 18px;
+	margin-right: 6px;
+	filter: grayscale(1);
+}
+
+.project-link:hover img{
+	filter: grayscale(0);
+}
+
+ul#homepage-projects{
+	list-style-type: square;
+}
+
+ul#homepage-projects li{
+	font-size: 15px;
+}
+
+ul#homepage-projects > li{
+	margin-top: 30px;
+	/* line-height: 1.98; */
+}
+ul#homepage-projects > li ul{
+	padding-left: 10px;
+}
+ul#homepage-projects > li ul li{
+	margin-top: 10px;
+}
