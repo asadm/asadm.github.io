@@ -5,10 +5,9 @@ This site is made using NextJS and GitHub Pages. GitHub automatically exports a 
 ## Running Site Locally
 
 - Install NodeJS if you don't have it already
-- Install Yarn by running `npm install -g yarn`
 - Clone this repo.
-- `cd` and run `yarn install` in this repo's folder.
-- Run `yarn dev` to start the server locally.
+- `cd` and run `npm install` in this repo's folder.
+- Run `npm run dev` to start the server locally.
 
 ## Publishing to your own site
 
