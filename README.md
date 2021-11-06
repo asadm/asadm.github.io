@@ -1,15 +1,14 @@
 # Asad's Homepage
 
-This site is made using Jekyll and GitHub Pages. Jekyll allows me to have a single layout/template which every page is wrapped with. GitHub automatically builds Jekyll into HTML and serves it. I just needed to enable pages from the repo settings.
+This site is made using NextJS and GitHub Pages. GitHub automatically exports a static build for NextJS into HTML and serves it. I just needed to enable pages from the repo settings.
 
 ## Running Site Locally
 
-- Install Ruby if you don't have it already.
-- Install Bundler with `gem install bundler` command.
-- Clone this Repo.
-- `cd` and run `bundle install` into this repo's folder.
-- Run `bundle exec jekyll serve` to start the server locally.
-- Make your changes and just refresh in browser to see them.
+- Install NodeJS if you don't have it already
+- Install Yarn by running `npm install -g yarn`
+- Clone this repo.
+- `cd` and run `yarn install` in this repo's folder.
+- Run `yarn dev` to start the server locally.
 
 ## Publishing to your own site
 
@@ -19,4 +18,3 @@ This site is made using Jekyll and GitHub Pages. Jekyll allows me to have a sing
 - This will build your site and host it on the selected domain automatically on each `git push`.
 
 Cheers!
-
