@@ -9,9 +9,9 @@ export default function MyHead({ title, description, url, image }) {
         <meta property="og:title" content={`${title} – Asad Memon`} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://asadmemon.com${url}`} />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <link rel="shortcut icon" href="/favicon.png" />
-        <meta property="og:image" content={`https://asadmemon.com/${image?image:"img/main1.jpg"}`} />
+        <link rel="apple-touch-icon" href="/assets/favicon.png" />
+        <link rel="shortcut icon" href="/assets/favicon.png" />
+        <meta property="og:image" content={`https://asadmemon.com/${image?image:"assets/img/main1.jpg"}`} />
         <meta property="og:description" content={description?description:"Asad Memon's homepage."} />
         <a href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'/>
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
