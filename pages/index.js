@@ -17,7 +17,8 @@ export default function Home() {
       </h1>
       <h2>I make stuff on computer.<br />You may know me as:</h2>
       <ul id="homepage-projects">
-        <li>Co-founder and CTO of
+        <li>Software Engineer at <a href="http://google.com/" target="_blank" className="project-link">Google</a>.</li>
+        <li>Previously, Co-founder and CTO of
           <a href="https://codeinterview.io" target="_blank" className="project-link"><img src="/assets/img/icons/ci.png" />CodeInterview.io</a> &
           <a href="https://remoteinterview.io" target="_blank" className="project-link"><img src="/assets/img/icons/ri.png" />RemoteInterview.io</a>.
           <br />Two products with one goal: accurately measure candidates&apos; coding skills.
