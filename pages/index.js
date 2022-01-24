@@ -27,6 +27,9 @@ export default function Home() {
         <li>Memon behind the weekly newsletter <a href="http://asad.substack.com/" target="_blank" className="project-link">Memon Mondays</a>.</li>
         <li>Creator of
           <ul>
+          <li><a href="https://www.codecaptcha.io" target="_blank" className="project-link"><img src="/assets/img/icons/codecaptcha.png" />CodeCaptcha.io</a> – Hide your web link behind a coding challenge.
+              <a title="Hacker News Discussion" target="_blank" href="https://news.ycombinator.com/item?id=29993948" className="badge hn"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Y Combinator icon</title><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z" /></svg> <span>162</span></a>
+            </li>
             <li><a href="/projects/screenshothero/" className="project-link"><img src="/assets/img/icons/screenshothero.png" />Screenshot Hero</a> – iOS app that scans through screenshots and makes them searchable by text in them.
               <a title="Hacker News Discussion" target="_blank" href="https://news.ycombinator.com/item?id=22065333" className="badge hn"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Y Combinator icon</title><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z" /></svg> <span>429</span></a>
             </li>
