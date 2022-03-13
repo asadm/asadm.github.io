@@ -5,17 +5,29 @@ import path from 'path'
 import matter from 'gray-matter'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import moment from 'moment'
+import Link from 'next/link'
+import Head from "../../components/head";
 
-// import { Nav, Button } from '../../components'
 
 const components = { /*Nav, Button,*/ SyntaxHighlighter }
 const data = { docco }
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 blog">
+      <Head 
+      title={title}
+    />
       <h1>{title}</h1>
-      <MDXRemote {...mdxSource} components={components} scope={data}/>
+      <div className='meta'>
+        <Link href="/blog/"><a className='link-back'>Back</a></Link>
+        <span className='date' title={moment(date).format("dddd, MMMM Do YYYY")}>
+          {moment(date).fromNow()}
+        </span>
+        
+      </div>
+      <MDXRemote {...mdxSource} components={components} scope={data} />
     </div>
   )
 }
@@ -25,7 +37,7 @@ const getStaticPaths = async () => {
 
   const paths = files.map(filename => ({
     params: {
-      slug: filename.replace('.mdx', '')
+      slug: filename.replace('.mdx', '').replace('.md', '')
     }
   }))
 
@@ -36,8 +48,14 @@ const getStaticPaths = async () => {
 }
 
 const getStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMeta = fs.readFileSync(path.join('blogposts',
-    slug + '.mdx'), 'utf-8')
+  let markdownWithMeta;
+  try {
+    markdownWithMeta = fs.readFileSync(path.join('blogposts',
+      slug + '.mdx'), 'utf-8')
+  } catch (e) {
+    markdownWithMeta = fs.readFileSync(path.join('blogposts',
+      slug + '.md'), 'utf-8')
+  }
 
   const { data: frontMatter, content } = matter(markdownWithMeta)
   const mdxSource = await serialize(content)
