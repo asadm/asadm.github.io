@@ -16,7 +16,7 @@ const Home = ({ posts }) => {
         moment(b.frontMatter.date).unix() - moment(a.frontMatter.date).unix()
       ).map((post, index) => (
 
-        <div className="card mb-3 list-item" style={{ maxWidth: '540px' }}>
+        <div key={post.frontMatter.title} className="card mb-3 list-item" style={{ maxWidth: '540px' }}>
           <div className="row g-0">
           {/* <div className="thumbnail">
               <img

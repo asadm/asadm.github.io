@@ -33,7 +33,7 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
 }
 
 const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join('blogposts'))
+  const files = fs.readdirSync(path.join('blogposts')).filter(filename => !filename.startsWith('_') && !filename.startsWith('.'))
 
   const paths = files.map(filename => ({
     params: {
