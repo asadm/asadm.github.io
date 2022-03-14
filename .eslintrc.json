@@ -5,6 +5,7 @@
     "react/jsx-no-target-blank": "off",
     "@next/next/no-img-element": "off",
     "jsx-a11y/alt-text": "off",
-    "@next/next/next-script-for-ga": "off"
+    "@next/next/next-script-for-ga": "off",
+    "react/no-children-prop": "off"
   }
 }

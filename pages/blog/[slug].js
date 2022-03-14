@@ -8,12 +8,12 @@ import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import moment from 'moment'
 import Link from 'next/link'
 import Head from "../../components/head";
-
+import GitHubIssues from '../../components/github-issues'
 
 const components = { /*Nav, Button,*/ SyntaxHighlighter }
 const data = { docco }
 
-const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
+const PostPage = ({ frontMatter: { title, date, issue }, mdxSource }) => {
   return (
     <div className="mt-4 blog">
       <Head 
@@ -28,6 +28,7 @@ const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
         
       </div>
       <MDXRemote {...mdxSource} components={components} scope={data} />
+      {issue && <GitHubIssues issueId={issue} />}
     </div>
   )
 }
