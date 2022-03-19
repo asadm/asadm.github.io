@@ -5,10 +5,6 @@ import Link from 'next/link'
 import moment from 'moment'
 import Head from "../../components/head";
 
-export const config = {
-  unstable_runtimeJS: false
-};
-
 const Home = ({ posts }) => {
   return (
     <div className="mt-5 blog">
