@@ -8,7 +8,7 @@ const moment = require('moment')
 async function generate() {
   const feed = new RSS({
     title: 'Asad Memon',
-    site_url: 'https://asadmemon.com',
+    site_url: 'https://asadmemon.com/blog',
     feed_url: 'https://asadmemon.com/feed.xml'
   })
 
@@ -29,7 +29,7 @@ async function generate() {
     const frontmatter = post.frontMatter
     feed.item({
       title: frontmatter.title,
-      url: '/blog/' + post.slug,
+      url: 'https://asadmemon.com/blog/' + post.slug,
       date: moment(frontmatter.date).format("YYYY/MM/DD"),
       description: frontmatter.description
     })
