@@ -1,6 +1,6 @@
 ---
 title: Using GitHub Issues for Blog Comments
-date: 'Mar 13, 2022'
+date: '2022-03-13T08:42:50.450Z'
 description: I wanted to add a comment system to this blog but I didn't want to make visitors suffer with something like Disqus which are tracking-heavy. So I decided to use GitHub issues.
 issue: 4
 ---
