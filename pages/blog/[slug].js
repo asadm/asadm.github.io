@@ -9,11 +9,11 @@ import moment from 'moment'
 import Link from 'next/link'
 import Head from "../../components/head";
 import GitHubIssues from '../../components/github-issues'
-
+import readingTime from '../../components/reading-time'
 const components = { /*Nav, Button,*/ SyntaxHighlighter }
 const data = { docco }
 
-const PostPage = ({ frontMatter: { title, date, issue }, mdxSource }) => {
+const PostPage = ({ frontMatter: { title, date, issue }, mdxSource, readingTime }) => {
   return (
     <div className="mt-4 blog">
       <Head 
@@ -26,7 +26,7 @@ const PostPage = ({ frontMatter: { title, date, issue }, mdxSource }) => {
       </div>
         <br/>
         <span className='date' title={moment(date).format("dddd, MMMM Do YYYY")}>
-          {moment(date).fromNow()}
+          {moment(date).fromNow()} | {readingTime} min read
         </span>
         
       </div>
@@ -68,7 +68,8 @@ const getStaticProps = async ({ params: { slug } }) => {
     props: {
       frontMatter,
       slug,
-      mdxSource
+      mdxSource,
+      readingTime: readingTime(content)
     }
   }
 }

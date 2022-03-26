@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Link from 'next/link'
 import moment from 'moment'
 import Head from "../../components/head";
+import readingTime from '../../components/reading-time'
 
 const Home = ({ posts }) => {
   return (
@@ -32,7 +33,7 @@ const Home = ({ posts }) => {
                 </Link>
               </p>
               <p className="date" title={moment(post.frontMatter.date).format("dddd, MMMM Do YYYY")}>
-                {moment(post.frontMatter.date).fromNow()}
+                {moment(post.frontMatter.date).fromNow()} | {post.readingTime} min read
               </p>
             </div>
           </div>
@@ -47,11 +48,12 @@ export const getStaticProps = async () => {
 
   const posts = files.filter(filename => !filename.startsWith('_') && !filename.startsWith('.')).map(filename => {
     const markdownWithMeta = fs.readFileSync(path.join('blogposts', filename), 'utf-8')
-    const { data: frontMatter } = matter(markdownWithMeta)
+    const { data: frontMatter, content } = matter(markdownWithMeta)
 
     return {
       frontMatter,
-      slug: filename.split('.')[0]
+      slug: filename.split('.')[0],
+      readingTime: readingTime(content)
     }
   })
 
