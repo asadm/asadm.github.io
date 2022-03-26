@@ -21,7 +21,10 @@ const PostPage = ({ frontMatter: { title, date, issue }, mdxSource }) => {
     />
       <h1>{title}</h1>
       <div className='meta'>
-        <Link href="/blog/"><a className='link-back'>Back</a></Link>
+      <div className='subscribe-text'>
+      <Link href="/blog/"><a className=''>Back</a></Link> | <a href="/feed.xml">Subscribe with RSS</a> or <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fasadmemon.com%2Ffeed.xml">via Feedly</a>.
+      </div>
+        <br/>
         <span className='date' title={moment(date).format("dddd, MMMM Do YYYY")}>
           {moment(date).fromNow()}
         </span>

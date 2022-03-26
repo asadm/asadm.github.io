@@ -12,6 +12,9 @@ const Home = ({ posts }) => {
         title="Blog Posts"
       />
       <h1 className="">Posts</h1>
+      <div className='subscribe-text'>
+        <a href="/feed.xml">Subscribe with RSS</a> or <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fasadmemon.com%2Ffeed.xml">via Feedly</a>.
+      </div>
       {posts.sort((a, b) =>
         moment(b.frontMatter.date).unix() - moment(a.frontMatter.date).unix()
       ).map((post, index) => (

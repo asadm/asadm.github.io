@@ -9,7 +9,8 @@ async function generate() {
   const feed = new RSS({
     title: 'Asad Memon',
     site_url: 'https://asadmemon.com/blog',
-    feed_url: 'https://asadmemon.com/feed.xml'
+    feed_url: 'https://asadmemon.com/feed.xml',
+    image_url: 'https://asadmemon.com/assets/favicon.png',
   })
 
   const posts = await fs.promises.readdir(path.join(__dirname, '..', 'blogposts'))

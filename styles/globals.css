@@ -371,6 +371,13 @@ ul#homepage-projects > li ul li{
 		text-decoration: underline;
 }
 
+.blog .subscribe-text a{
+	--text-opacity: 1;
+	color: #718096;
+	color: rgba(113,128,150,var(--text-opacity));
+	text-decoration: underline;
+}
+
 /* Github Issues Widget */
 
 .github-issues{
