@@ -3,8 +3,13 @@
         <title><![CDATA[Asad Memon]]></title>
         <description><![CDATA[Asad Memon]]></description>
         <link>https://asadmemon.com/blog</link>
+        <image>
+            <url>https://asadmemon.com/assets/favicon.png</url>
+            <title>Asad Memon</title>
+            <link>https://asadmemon.com/blog</link>
+        </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 25 Mar 2022 23:49:43 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Mar 2022 01:08:37 GMT</lastBuildDate>
         <atom:link href="https://asadmemon.com/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Using GitHub Issues for Blog Comments]]></title>
