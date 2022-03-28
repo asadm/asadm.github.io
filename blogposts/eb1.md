@@ -2,7 +2,7 @@
 title: Qualifying for EB1 Green Card as a Software Engineer
 date: '2022-03-25T08:42:50.450Z'
 description: I recently got my US green card via an EB1-A (Alien of Extraordinary Ability) petition and many people have been asking me about this I thought I'd share my journey and my learnings.
-issue: 5
+issue: 6
 ---
 
 I recently got my US green card via an EB1-A (Alien of Extraordinary Ability) petition and **A LOT** of people have been asking me about this so I thought I'd share my journey and share my learnings.
@@ -45,7 +45,7 @@ My role in my startup counted here. I had to prove a) my role is critical and b)
 - **Published material about you in professional or major trade publications or other major media:** 
 My startup and my side-projects were featured in many online publications (read tech-blogs) and a few mentions in top-tier publications (BBC, Acm.org, etc.). If you and your work were featured on popular websites/blogs, you may qualify for this.
 
-- **Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance to the field:** Some of my projects were a bit scientific and somewhat fit this criteria. If you have patents, research papers or some side-project , this is where you list them.
+- **Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance to the field:** Some of my projects were a bit scientific and somewhat fit this criteria. If you have patents, research papers or some side-project, this is where you list them.
 
 - **Have been asked to judge the work of others, either individually or on a panel:** I had judged a few hackathons and international software competitions.
 
