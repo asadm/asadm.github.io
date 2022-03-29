@@ -7,7 +7,7 @@ jobs:
     runs-on: macos-11
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [16.x]
     steps:
       - name: Get files
         uses: actions/checkout@v2
