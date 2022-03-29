@@ -35,7 +35,7 @@ I can share the lawyer I used, please reach out privately.
 
 ## The Criterias
 
-Your sole goal is to prove you meet atleast 3 of the 10 criterias. You may want to attempt 5 or so of them to prevent your case be denied for being too weak; if USCIS doesn't agree on you qualifying for multiple criterias, a denial will be harder to challenge than say an RFE (Request For Evidence) for some criterias.
+Your sole goal is to prove that you meet atleast 3 of the 10 criterias. You may want to attempt 5 or so of them to prevent your case be denied for being too weak; if USCIS doesn't agree on your proof for multiple criterias, a denial will be harder to challenge than say an RFE (Request For Evidence) for some criterias.
 
 I attempted the following (five) criterias:
 
@@ -45,15 +45,15 @@ My role in my startup counted here. I had to prove a) my role is critical and b)
 - **Published material about you in professional or major trade publications or other major media:** 
 My startup and my side-projects were featured in many online publications (read tech-blogs) and a few mentions in top-tier publications (BBC, Acm.org, etc.). If you and your work were featured on popular websites/blogs, you may qualify for this.
 
-- **Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance to the field:** Some of my projects were a bit scientific and somewhat fit this criteria. If you have patents, research papers or some side-project, this is where you list them.
+- **Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance to the field:** Some of my projects were a fit the definition of this criteria. If you have patents, research papers or some side-project, this is where you list them.
 
 - **Have been asked to judge the work of others, either individually or on a panel:** I had judged a few hackathons and international software competitions.
 
-- **Receipt of lesser nationally or internationally recognized prizes or awards for excellence:** I won *many* hackathons and competitions both before and after graduating from college, some qualified for this criteria. Note that USCIS does not consider "student" competitions here.
+- **Receipt of lesser nationally or internationally recognized prizes or awards for excellence:** I had won *many* hackathons and competitions both before and after graduating from college, some qualified for this criteria. Note that USCIS does not consider "student" competitions here.
 
 Other criterias that may apply to you:
 
-- **Evidence that you command a high salary or other significantly high remuneration in relation to others in the field:** If you are paid well (like top 5% of industry), you may qualify for this.
+- **Evidence that you command a high salary or other significantly high remuneration in relation to others in the field:** If you are paid well (like top 5% of the industry), you may qualify for this.
 
 - **Evidence of your membership in associations in the field which demand outstanding achievement of their members:** If you are a member of a prestigious association (like YC probably), you may qualify for this.
 
