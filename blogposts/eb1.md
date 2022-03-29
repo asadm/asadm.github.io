@@ -64,5 +64,8 @@ As I mentioned before, it mostly depends on how good your lawyer is in framing y
 
 Of note, I was highly impressed by the amount of detail; convincing counter-reasoning in the USCIS's RFE and the response my lawyer wrote to tackle it.
 
+## Premium Processing vs. Regular Processing
+Most lawyers refrain from applying EB1s with premium processing. I have consulted multiple lawyers and the consensus is that the cases with premium processing have higher chance of getting RFEs than regular ones. I am not sure what causes this to happen inside USCIS. Maybe it's just their trick to push the can down the road but this means that you will have to wait 6-12 months for your case to be adjudicated.
+
 ## If and once the petition is approved
 Once the petition is approved. The next step is fairly straight-forward. You either need to file I-485 (Adjustment of Status) or book an interview appointment with the nearest embassy if you are outside of US at the time of approval.
