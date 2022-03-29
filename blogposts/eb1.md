@@ -53,9 +53,9 @@ My startup and my side-projects were featured in many online publications (read 
 
 Other criterias that may apply to you:
 
-- **Evidence that you command a high salary or other significantly high remuneration in relation to others in the field:** If you are paid well (like top 5% of the industry), you may qualify for this.
+- **Command a high salary or other significantly high remuneration in relation to others in the field:** If you are paid well (like top 5% of the industry), you may qualify for this.
 
-- **Evidence of your membership in associations in the field which demand outstanding achievement of their members:** If you are a member of a prestigious association (like YC probably), you may qualify for this.
+- **Membership in associations in the field which demand outstanding achievement of their members:** If you are a member of a prestigious association (like YC probably), you may qualify for this.
 
 ## RFE
 USCIS has started to be more stingy with EB1s so expect an RFE. More often than not, you are going to get one (or more).
