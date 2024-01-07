@@ -4,13 +4,14 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import SyntaxHighlighter from 'react-syntax-highlighter'
+import {Thumbnail} from '../../components/blogthumbnail'
 import { docco } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import moment from 'moment'
 import Link from 'next/link'
 import Head from "../../components/head";
 import GitHubIssues from '../../components/github-issues'
 import readingTime from '../../components/reading-time'
-const components = { /*Nav, Button,*/ SyntaxHighlighter }
+const components = { /*Nav, Button,*/ SyntaxHighlighter, Thumbnail }
 const data = { docco }
 
 const PostPage = ({ frontMatter: { title, date, issue }, mdxSource, readingTime }) => {
