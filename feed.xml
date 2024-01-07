@@ -9,8 +9,15 @@
             <link>https://asadmemon.com/blog</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 17 Aug 2023 06:29:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 07 Jan 2024 19:30:23 GMT</lastBuildDate>
         <atom:link href="https://asadmemon.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[When Everything Becomes the Same]]></title>
+            <description><![CDATA[Everything is standardized, uniform, predictable, same. Where goes our creative expression?]]></description>
+            <link>https://asadmemon.com/blog/same</link>
+            <guid isPermaLink="true">https://asadmemon.com/blog/same</guid>
+            <pubDate>Sun, 07 Jan 2024 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Qualifying for EB1 Green Card as a Software Engineer]]></title>
             <description><![CDATA[I recently got my US green card via an EB1-A (Alien of Extraordinary Ability) petition and many people have been asking me about this I thought I'd share my journey and my learnings.]]></description>
@@ -24,6 +31,13 @@
             <link>https://asadmemon.com/blog/issues</link>
             <guid isPermaLink="true">https://asadmemon.com/blog/issues</guid>
             <pubDate>Sun, 13 Mar 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Functions for Beginners]]></title>
+            <description><![CDATA[Learn how to create and use functions]]></description>
+            <link>https://asadmemon.com/blog/test</link>
+            <guid isPermaLink="true">https://asadmemon.com/blog/test</guid>
+            <pubDate>Wed, 04 Aug 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[VEON Pakistan’s Launch and What Startups Can Learn From It]]></title>
