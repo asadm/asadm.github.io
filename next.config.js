@@ -6,3 +6,4 @@ module.exports = withMDX({
   pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 });
 // Rebuild trigger Mon Jun  2 23:08:16 MDT 2025
+// Force rebuild with correct assets Mon Jun  2 23:09:41 MDT 2025
