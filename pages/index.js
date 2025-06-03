@@ -24,6 +24,7 @@ export default function Home() {
       <ul id="homepage-projects">
       <li>Building <a href="https://jonny.sh/" target="_blank" className="project-link"><img src="/assets/img/icons/playroom.png" />ContextVision</a>.</li>
         <li>Lab Systems Engineer at <a href="https://apple.com/" target="_blank" className="project-link"><img src="/assets/img/icons/apple.png" />Apple</a>.</li>
+        <li>Ex Field Engineer at <a href="https://www.verizon.com" target="_blank" className="project-link"><img src="/assets/img/icons/verizon.png" />Verizon</a>.</li>
         <li>Ex Co-founder at
           <a href="https://dcesk8.com" target="_blank" className="project-link"><img src="/assets/img/icons/dcesk8.png" />DCESK8 Inc.</a>.
           <br />Building tools and technology to support e-mobility future.

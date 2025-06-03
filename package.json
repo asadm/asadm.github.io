@@ -13,7 +13,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^12.3.4",
     "gray-matter": "^4.0.3",
-    "moment": "^2.29.4",
+    "moment": "^2.30.1",
     "next": "12.3.4",
     "next-mdx-remote": "^3.0.8",
     "next-sitemap": "^2.5.28",
