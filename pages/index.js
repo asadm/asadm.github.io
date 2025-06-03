@@ -13,7 +13,7 @@ export default function Home() {
 
     <div id="hero">
       <div className="profile-picture">
-        <img src="/photo.jpg" alt="Jonathan Solomon" className="circle-image" />
+        <img src="/photo.jpg" alt="Jonathan Solomon" className="circle-image" loading="eager" />
       </div>
       <h1>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
