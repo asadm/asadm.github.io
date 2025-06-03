@@ -6,12 +6,17 @@ on:
 permissions:
   contents: write
 
+# Cancel any in-progress job or run
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
-    runs-on: macos-11
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
     steps:
       - name: Get files
         uses: actions/checkout@v3
@@ -19,10 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm'
       - name: Install packages
         run: npm ci
       - name: Build project
         run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
       - name: Export static files
         run: npm run export
       - name: Add .nojekyll file
