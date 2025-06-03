@@ -13,15 +13,14 @@ export default function Home() {
 
     <div id="hero">
       <h1>
-        Hi, I&apos;m Asad!
+        Hi, I&apos;m Jon!
       </h1>
       <h2>I make stuff on computer.<br />You may know me as:</h2>
       <ul id="homepage-projects">
-      <li>Making <a href="https://joinplayroom.com/" target="_blank" className="project-link"><img src="/assets/img/icons/playroom.png" />Playroom</a>.</li>
-        <li>Software Engineer at <a href="https://google.com/" target="_blank" className="project-link"><img src="/assets/img/icons/google.png" />Google</a>.</li>
+      <li>Making <a href="https://jonny.sh/" target="_blank" className="project-link"><img src="/assets/img/icons/playroom.png" />ContextVision</a>.</li>
+        <li>Software Engineer at <a href="https://google.com/" target="_blank" className="project-link"><img src="/assets/img/icons/apple.png" />Apple</a>.</li>
         <li>Previously, Co-founder and CTO of
-          <a href="https://codeinterview.io" target="_blank" className="project-link"><img src="/assets/img/icons/ci.png" />CodeInterview.io</a> &
-          <a href="https://remoteinterview.io" target="_blank" className="project-link"><img src="/assets/img/icons/ri.png" />RemoteInterview.io</a>.
+          <a href="https://dcesk8.io" target="_blank" className="project-link"><img src="/assets/img/icons/ci.png" />DCESK8.io</a>.
           <br />Two products with one goal: accurately measure candidates&apos; coding skills.
           <br />Backed by Draper Associates & Alchemist Accelerator.
         </li>

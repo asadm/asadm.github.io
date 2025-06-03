@@ -7,10 +7,10 @@ const moment = require('moment')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Asad Memon',
-    site_url: 'https://asadmemon.com/blog',
-    feed_url: 'https://asadmemon.com/feed.xml',
-    image_url: 'https://asadmemon.com/assets/favicon.png',
+    title: 'Jonathan Solomon',
+    site_url: 'https://jonny.sh/blog',
+    feed_url: 'https://jonny.sh/feed.xml',
+    image_url: 'https://jonny.sh/assets/favicon.png',
   })
 
   const posts = await fs.promises.readdir(path.join(__dirname, '..', 'blogposts'))
@@ -30,7 +30,7 @@ async function generate() {
     const frontmatter = post.frontMatter
     feed.item({
       title: frontmatter.title,
-      url: 'https://asadmemon.com/blog/' + post.slug,
+      url: 'https://jonny.sh/blog/' + post.slug,
       date: moment(frontmatter.date).format("YYYY/MM/DD"),
       description: frontmatter.description
     })

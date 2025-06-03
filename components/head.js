@@ -5,14 +5,14 @@ export default function MyHead({ title, description, url, image }) {
   return (
     <Head>
         <title>{title} – Asad Memon</title>
-        <meta name="description" content={description?description:"Asad Memon's homepage."} />
-        <meta property="og:title" content={`${title} – Asad Memon`} />
+        <meta name="description" content={description?description:"Jonathan Solomon's homepage."} />
+        <meta property="og:title" content={`${title} – Jonathan Solomon`} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://asadmemon.com${url}`} />
+        <meta property="og:url" content={`https://jonny.sh${url}`} />
         <link rel="apple-touch-icon" href="/assets/favicon.png" />
         <link rel="shortcut icon" href="/assets/favicon.png" />
-        <meta property="og:image" content={`https://asadmemon.com/${image?image:"assets/img/main1.jpg"}`} />
-        <meta property="og:description" content={description?description:"Asad Memon's homepage."} />
+        <meta property="og:image" content={`https://jonny.sh/${image?image:"assets/img/main1.jpg"}`} />
+        <meta property="og:description" content={description?description:"Jonathan Solomon's homepage."} />
         <a href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500' rel='stylesheet' type='text/css'/>
         <meta name="viewport" content="width=device-width, initial-scale=0.8" />
         <script

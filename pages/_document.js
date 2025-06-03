@@ -12,22 +12,23 @@ class MyDocument extends Document {
         <Head />
         <body>
         <div className="container">
-          <h1 id="logo" className="text-center"><a href="/">Asad<b>Memon</b></a></h1>
+          <h1 id="logo" className="text-center"><a href="/">Jonathan<b>Solomon</b></a></h1>
           <ul className="menu">
             <li><a href="/projects">All Projects</a></li>
             <li><a href="/talks">Talks</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a target="_blank" href="https://asad.substack.com/">Newsletter</a></li>
-            <li><a target="_blank" href="https://github.com/asadm">Github</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/memonasad/">LinkedIn</a></li>
-            <li><a target="_blank" href="http://instagram.com/snapmemon">Instagram</a></li>
+            <li><a target="_blank" href="https://jonny.substack.com/">Newsletter</a></li>
+            <li><a target="_blank" href="https://github.com/jonnysh">Github</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jonnysh/">LinkedIn</a></li>
+            <li><a target="_blank" href="http://instagram.com/jonnysh">Instagram</a></li>
           </ul>
 
           <Main />
           <NextScript />
 
           <div className="footer">
-            <p>AsadMemon.com [<a href="https://github.com/asadm/asadm.github.io" target="_blank">source code</a>].</p>
+            <p>jonny.sh [<a href="https://github.com/jonnysh/jonnysh.github.io" target="_blank">source code</a>].</p>
+            <p>jonny.sh [<a href="https://github.com/asadm/asadm.github.io" target="_blank">source code</a>].</p>
           </div>
         </div>
         </body>

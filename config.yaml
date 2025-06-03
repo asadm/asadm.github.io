@@ -1,0 +1,50 @@
+# Project Configuration
+
+# Site Settings
+site:
+  title: "Jon's Blog"
+  description: "Personal blog and portfolio"
+  author: "Jon"
+  email: "contact@example.com"
+  url: "https://jon.github.io"
+
+# Theme Settings
+theme:
+  primaryColor: "#0070f3"
+  secondaryColor: "#1a1a1a"
+  font:
+    family: "Inter, system-ui, sans-serif"
+    size: "16px"
+
+# Build Settings
+build:
+  outputDir: "_site"
+  base: "/"
+  assetsDir: "assets"
+
+# Content Settings
+content:
+  postsPerPage: 10
+  excerptLength: 200
+  dateFormat: "MMMM D, YYYY"
+
+# Features
+features:
+  darkMode: true
+  analytics: false
+  comments: false
+  rssFeed: true
+
+# Social Links
+social:
+  github: "https://github.com/jon"
+  twitter: "https://twitter.com/jon"
+  linkedin: "https://linkedin.com/in/jon"
+
+# SEO Settings
+seo:
+  twitterCard: "summary_large_image"
+  openGraph:
+    type: "website"
+    locale: "en_US"
+    siteName: "Jon's Blog"
