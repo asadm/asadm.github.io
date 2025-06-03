@@ -16,6 +16,7 @@ export default function Home() {
         <img src="/photo.jpg" alt="Jonathan Solomon" className="circle-image" />
       </div>
       <h1>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         Hi, I'm Jonathan! 
       </h1>
       <h2>I build cool things with cool people. 🛠️</h2>
