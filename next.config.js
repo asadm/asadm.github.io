@@ -11,3 +11,4 @@ module.exports = withMDX({
 // Force clean rebuild Mon Jun  2 23:12:56 MDT 2025
 // Rebuild after adding eager loading to images Mon Jun  2 23:17:39 MDT 2025
 // Clean rebuild with verified file structure Mon Jun  2 23:21:31 MDT 2025
+// Trigger deployment with updated workflow Mon Jun  2 23:23:58 MDT 2025
