@@ -2,6 +2,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+  workflow_dispatch:  # Add this line to enable manual triggers
 
 permissions:
   contents: write
