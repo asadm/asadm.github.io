@@ -1,12 +1,91 @@
+:root {
+	--profile-picture-size: 100px;
+	--content-width: 1000px;
+}
+
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: -0.004em;
-	
 	font-style: normal;
 	color: rgba(0, 0, 0, 0.84);
 	font-family: -apple-system, BlinkMacSystemFont, 'Source Sans Pro', "Helvetica Neue", sans-serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: subpixel-antialiased;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.floating-resume-button {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 1000;
+}
+
+.floating-resume-button a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: transform 0.2s ease;
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.floating-resume-button a:hover {
+	transform: translateY(-2px);
+}
+
+.floating-resume-button .resume-text {
+	font-weight: normal;
+}
+
+.header-container {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.content-container {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+#hero {
+	margin: 0;
+	padding: 40px 20px;
+	width: 100%;
+	max-width: none;
+}
+
+#hero h2 {
+	margin-bottom: 0.5rem;
+}
+
+#hero h3 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+#hero .profile-picture {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.circle-image {
+	width: var(--profile-picture-size);
+	height: var(--profile-picture-size);
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 li,p{

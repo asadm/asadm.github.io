@@ -1,0 +1,60 @@
+Jonathan Solomon
+571-343-9905 | jonathan@gojsg.com | linkedin.com/in/Jonsol | Denver, CO.
+Summary
+Skilled Hardware specialist with 5+ years of experience in hardware engineering, IoT devices, and smart systems.
+Expertise in sensor calibration, system-level debugging, and rapid adaptation to emerging technologies. Adept at
+setting up hardware equipment and implementing automated solutions in fast-paced environments. Seeking Lab
+Technician position at TCS to leverage technical skills and innovative problem-solving abilities.
+Education
+Northern Virginia Community College AS Computer Science Awards:
+• National Gold Medalist: IoT Smart Home Networks, SkillsUSA 2023
+• American Institute of Physics Nominee: Wireless Communication Systems — STEM Scholar
+• Official commendation by U.S. Senator Mark Warner (D-VA) for national achievement in IoT
+Experience
+Annandale, VA
+Aug. 2022 – May 2024
+Vision Hardware Lab Engineer — Vision Pro Sept 2024 – Present
+Apple Inc. (via Contract) Cupertino, CA / Boulder, CO
+• Designed, built, and maintained high-precision test infrastructure for Apple Vision Pro including robotic fixtures
+and system-level test automation platforms critical for product validation.
+• Led hardware-software integration efforts for mixed-reality systems using Bash, Ensemble, and Python,
+ensuring seamless data collection, firmware deployment, and continuous testing.
+• Created robotic arms and interactive test rigs that simulate user behaviors — enabling engineers to remotely test
+headset interactions with high repeatability and minimal human error.
+• Drove stability testing in dynamic environments: conducted natural vs. synthetic light flicker tests, diagnosed
+signal integrity issues, and ensured detection models avoid overfitting.
+• Diagnosed and debugged complex RF systems, sensor arrays, and lab hardware across multi-disciplinary
+teams; directly supported cross-functional debugging sessions.
+• Trusted as the sole DRI on labs in Cupitino and Boulder — responsible for keeping infrastructure operational and
+Efficient enabling Cross platform engineers to test and ship builds with confidence.
+IT Field Technician / Hardware Specialist Verizon contracted by HelloTech June 2018 – June 2023
+Washington, DC
+• Designed and implemented robust test environments for next-generation IoT systems, improving reliability by 30%.
+• Calibrated and maintained technical equipment, ensuring measurement accuracy within ±0.1% for oscilloscopes and
+signal analyzers.
+• Developed automated testing procedures using Python and LabVIEW, reducing manual testing time by 40%.
+• Integrated computer vision systems for IoT device QA, achieving a 98% defect detection rate.
+• Conducted hardware planning and site surveys to optimize system performance.
+Technology Support Specialist June 2023 – Jan 2024
+Allegra Marketing Annandale, VA
+• Built REST APIs to automate order-to-production flows; integrated automated data backup systems.
+• Created Bash and PowerShell scripts that saved 5+ hours of manual IT operations weekly.
+• Installed IoT sensors for production monitoring, improving consistency by 15%.
+Technical Skills
+Hardware: Oscilloscopes, spectrum analyzers, signal generators, automated testing fixtures, sensor calibration, IoT
+Embedded Systems: Arduino, Raspberry Pi, ESP32, microcontroller programming
+Networking: TCP/IP, DHCP, DNS, VLANs, VPN, industrial communication protocols
+Programming: Python, LabVIEW, Bash scripting, PowerShell, C++ for embedded systems
+IoT & Smart Systems: MQTT, device integration, environmental monitoring, sensor fusion
+Data Analysis: Statistical analysis, signal processing, machine learning basics
+Troubleshooting: Hardware and software debugging, lab testing, protocol analysis
+Computer Vision: OpenCV, camera calibration, 2D/3D image processing
+Emerging Tech: Basic understanding of AR/VR principles, spatial computing concepts
+Certifications: Additive Manufacturing Certification, CEDIA Home Network Specialist Certificate
+Education
+Northern Virginia Community College AS Computer Science Awards:
+• National Gold Medalist: IoT Smart Home Networks, SkillsUSA 2023
+• American Institute of Physics Nominee: Wireless Communication Systems — STEM Scholar
+• Official commendation by U.S. Senator Mark Warner (D-VA) for national achievement in IoT
+Annandale, VA
+Aug. 2022 – May 2024
