@@ -69,4 +69,4 @@ The deployment script performs the following steps:
 
 For more detailed information about the branching and deployment strategy, see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-Cheers!
+Brought you by vibe coding. Cheers!

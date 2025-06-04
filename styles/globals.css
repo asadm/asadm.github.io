@@ -1,3 +1,24 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures padding and border don't add to element's total width/height */
+  overflow-x: hidden; /* Globally prevent horizontal scroll / wiggle */
+}
+
+/* Apply border-box to all elements for consistency */
+*, *::before, *::after {
+  box-sizing: inherit; /* Inherit from html/body */
+}
+
+.page-content-section {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px; /* Consistent with original #hero padding */
+  width: 100%;
+}
+
 :root {
 	--profile-picture-size: 100px;
 	--content-width: 1000px;
@@ -63,6 +84,7 @@ body{
 	padding: 40px 20px;
 	width: 100%;
 	max-width: none;
+	/* overflow-x: hidden; Temporarily removed for diagnostics */
 }
 
 #hero h2 {
@@ -183,7 +205,6 @@ ul.menu  > li + li:before {
 		background-position: center;
 	}
 }
-
 ul.projectlist{
 	list-style-type: square;
 	max-width: 600px;
@@ -193,11 +214,6 @@ ul.projectlist{
 }
 ul.projectlist a{
 	color: #000;
-}
-
-ul.projectlist h3,p{
-	/* margin: 0px; */
-
 }
 ul.projectlist p{
 	font-weight: 300;

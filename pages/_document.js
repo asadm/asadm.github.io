@@ -16,7 +16,7 @@ class MyDocument extends Document {
             <ul className="menu">
               <li><a href="/projects">All Projects</a></li>
               <li><a href="/talks">Talks</a></li>
-              <li><a href="/blog">Blog</a></li>
+              <li><a href="/blog">apps</a></li>
               <li><a target="_blank" href="https://jonny.substack.com/">Newsletter</a></li>
               <li><a target="_blank" href="https://github.com/jonnysol">Github</a></li>
               <li><a target="_blank" href="https://www.linkedin.com/in/jonnysol/">LinkedIn</a></li>

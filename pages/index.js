@@ -1,17 +1,21 @@
-import Head from "../components/head";
+import HeadComponent from "../components/head"; // Renamed to avoid conflict
+import dynamic from 'next/dynamic';
 
-export const config = {
-  unstable_runtimeJS: false
-};
+// Dynamically import PhotoBelt with SSR turned off
+const PhotoBelt = dynamic(() => import("../components/PhotoBelt"), {
+  ssr: false,
+  // loading: () => <p>Loading photo belt...</p> // Optional loading state
+});
+
 
 export default function Home() {
   return (
     <>
-    <Head 
+    <HeadComponent 
       title="Home"
     />
 
-    <div id="hero">
+    <div className="page-content-section">
       <div className="profile-picture">
         <img src="/photo.jpg" alt="Jonathan Solomon" className="circle-image" loading="eager" />
       </div>
@@ -31,6 +35,11 @@ export default function Home() {
           <br />Advocating for sustainable transportation solutions.
         </li>
         <li>Weekly newsletter <a href="http://jonny.substack.com/" target="_blank" className="project-link">Dev Digest</a>.</li>
+      </ul>
+    </div>
+    <PhotoBelt />
+    <div className="page-content-section">
+      <ul id="homepage-projects"> 
         <li>Creator of
           <ul>
           <li><a href="https://www.codecaptcha.io" target="_blank" className="project-link"><img src="/assets/img/icons/codecaptcha.png" />JailTime.io</a> – MCP authentication.
