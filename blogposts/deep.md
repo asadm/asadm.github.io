@@ -20,3 +20,5 @@ A decade later, around 2023, those specific learnings became invaluable while I 
 Today, [Playroom](https://docs.joinplayroom.com) effortlessly serves over 10 million monthly active users across numerous games.
 
 This stands as a clear instance of how pursuing interesting, challenging work, particularly in its depths and without the immediate prospect of monetary reward, has greatly benefited me later in life.
+
+These days I am in another deep-dive on SLAM systems for about year or so. You can see video demo and follow my progress on [X](https://x.com/_asadmemon/status/1977737626951041225). Again, no immediate rewards, some heuristics and pure obsession.
