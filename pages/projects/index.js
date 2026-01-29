@@ -13,7 +13,7 @@ export default function Projects() {
       />
       <ul className="projectlist">
         <li>
-          <h4><Link href="https://zeroserver.io">Zero Server</Link> [<Link href="https://github.com/remoteinterview/zero">GitHub</Link>]</h4>
+          <h4><Link href="https://github.com/remoteinterview/zero/">Zero Server</Link></h4>
           <p>Zero is a web server to simplify web development.</p>
         </li>
         <li>
